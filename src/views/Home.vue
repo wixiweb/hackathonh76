@@ -4,6 +4,9 @@
 
         <h2>Essential Links</h2>
 
+        <button @click="allPostsFiltered(2)">userId = 2</button>
+        <post-list></post-list>
+
         <p>
             <router-link :to="{name: 'my-account'}">Mon comtpe</router-link>
         </p>
@@ -11,13 +14,19 @@
 </template>
 
 <script>
+    import { mapGetters, mapActions } from 'vuex'
+    import PostList from '../components/PostList.vue'
     export default {
         name: 'home',
+        components: { PostList },
         data() {
             return {
                 msg: 'Welcome to Your Vue.js PWA'
             }
-        }
+        },
+        methods: mapActions([
+            'allPostsFiltered'
+        ]),
     }
 </script>
 
