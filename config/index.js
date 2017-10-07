@@ -30,7 +30,7 @@ module.exports = {
         proxyTable: {
             // proxy all requests starting with /api to jsonplaceholder
             '/api': {
-                target: 'http://jsonplaceholder.typicode.com',
+                target: 'http://hackathon76api.dev/',
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''
