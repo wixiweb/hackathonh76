@@ -15,7 +15,7 @@
     </header>
 
     <main class="main">
-        <form class="login-form">
+        <div class="login-form">
             <p class="">
                 <label for="email">Votre Identifiant</label>
                 <input type="email" id="email">
@@ -25,12 +25,16 @@
                 <input type="password" id="password">
             </p>
             <p>
-                <button type="submit">Se connecter</button>
+                <button id="submitButton" type="submit">Se connecter</button>
             </p>
-        </form>
+        </div>
     </main>
 
     <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/login.js"></script>
+    <div id="loading">
+        <p><img src="loading.gif" /> </p>
+    </div>
 </body>
 </html>
 
