@@ -1,0 +1,23 @@
+.follow-up-list {
+    display: flex;
+    flex: 1 1 0;
+    flex-flow: row nowrap;
+    padding: 12px;
+}
+
+    .follow-up-list-item {
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        flex: 1 1 0;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+    .follow-up-list-item-title {
+        font-weight: bold;
+        margin: 0 0 12px 0;
+    }
+
+    .follow-up-list-item-description {
+        margin: 0;
+    }
