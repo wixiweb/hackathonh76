@@ -160,6 +160,7 @@ body {
 .tenant-card-footer-phone {
     flex: 3;
     color: #01aaef;
+    font-size: 14px;
 }
 
 .tenant-card-footer-call {
@@ -175,4 +176,9 @@ body {
 .tenant-card-footer-call:focus {
     background-color: #999999;
     outline: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
 }
