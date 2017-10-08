@@ -1,0 +1,38 @@
+<html>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="css/utils.css" rel="stylesheet">
+    <link href="css/pro.css" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="js/jSignature.min.js"></script>
+    <style>
+        #btn-reset-signature {
+            text-align: center;
+            background-color: #01aaef;
+            color: #FFFFFF;
+            border-radius: 4px;
+            padding: 2px 12px;
+            border: none;
+        }
+        #btn-reset-signature:active,
+        #btn-reset-signature:focus {
+            outline: none;
+            background-color: #999999;
+        }
+
+    </style>
+<body>
+
+<div id="signature"></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var $signature = $("#signature");
+
+        $signature.jSignature({
+            lineWidth: 1, width: 'auto', height: 800
+        });
+
+    });
+</script>
+</body>
+</html>
