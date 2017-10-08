@@ -2,6 +2,7 @@
 /*$secondary-color: #EF7F01;*/
 
 * {
+    box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -14,6 +15,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+    overflow: auto;
 }
 
 .header {
@@ -24,8 +26,13 @@ body {
     width: 100%;
 }
 
-    .header img {
+    .header > a {
         margin: auto;
+        text-decoration: none;
+    }
+
+    .header > a > img {
+        border: none;
     }
 
     .header:after {
@@ -42,3 +49,45 @@ body {
         background: -moz-linear-gradient(top,#c50b34,#ef7f01);
         background: linear-gradient(to bottom, #c50b34, #ef7f01);
     }
+
+.hidden {
+    display: none !important;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form > p {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 20px 0;
+        padding: 0 10px;
+    }
+
+        .form > p > label {
+            line-height: 30px;
+            padding: 5px 0;
+        }
+
+        .form > p > input,
+        .form > p > select,
+        .form > p > textarea {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            box-shadow:  0 1px 5px rgba(0, 0, 0, 0.5);
+            line-height: 30px;
+            padding: 5px 10px;
+        }
+
+        .form > p > button[type="submit"] {
+            border: none;
+            border-radius: 4px;
+            background-color: #01aaef;
+            color: white;
+            font-weight: bold;
+            line-height: 30px;
+            padding: 5px 10px;
+        }

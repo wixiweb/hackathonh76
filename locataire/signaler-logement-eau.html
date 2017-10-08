@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signaler - Habitat76</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+<header class="header">
+    <a href="./login.html">
+        <img src="../img/habitat76.png" alt="Habitat 76">
+    </a>
+</header>
+
+<main class="main">
+    <section class="report">
+        <h1 class="title">Votre réclamation concerne ?</h1>
+
+        <form class="form">
+            <p>
+                <label for="subject">Sujet de la demande</label>
+                <select id="subject">
+                    <option value=""></option>
+                    <option value="PROBLEME DE ROBINET">PROBLEME DE ROBINET</option>
+                    <option value="CHASSE D'EAUX">CHASSE D'EAUX</option>
+                    <option value="APPAREILS SANITAIRES (chaudieres,cumulus..)">APPAREILS SANITAIRES (chaudieres,cumulus..)</option>
+                    <option value="COLONNE D'EVACUATION/EAU PLUVIALE">COLONNE D'EVACUATION/EAU PLUVIALE</option>
+                    <option value="DEBORDEMENTS APPAREILS(wc, lavabo..)">DEBORDEMENTS APPAREILS(wc, lavabo..)</option>
+                    <option value="JOINTS SANITAIRES">JOINTS SANITAIRES</option>
+                    <option value="DEBOUCHAGES EVACUATIONS">DEBOUCHAGES EVACUATIONS</option>
+                    <option value="AUTRES">AUTRES</option>
+                </select>
+            </p>
+
+            <p class="hidden">
+                <label for="location">Localisation / Pièce</label>
+                <select id="location">
+                    <option value=""></option>
+                    <option value="Salon - 18 m²">Salon - 18 m²</option>
+                    <option value="Cuisine - 12 m²">Cuisine - 12 m²</option>
+                    <option value="Couloir - 16 m²">Couloir - 16 m²</option>
+                    <option value="Chambre - 9 m² (2)">Chambre - 9 m² (2)</option>
+                    <option value="Salle de bain - 7 m²">Salle de bain - 7 m²</option>
+                    <option value="WC - 2 m²">WC - 2 m²</option>
+                </select>
+            </p>
+
+            <p class="hidden">
+                <label for="picture">Photo (facultatif)</label>
+                <input type="file" id="picture">
+            </p>
+
+            <p class="hidden">
+                <label for="description">Description</label>
+                <textarea id="description" rows="5"></textarea>
+            </p>
+
+            <p class="hidden">
+                <label for="phone">Votre numéro de contact</label>
+                <input type="tel" id="phone">
+            </p>
+
+            <p class="hidden">
+                <button type="submit">Envoyer la réclamation</button>
+            </p>
+        </form>
+    </section>
+</main>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+</body>
+</html>
+
