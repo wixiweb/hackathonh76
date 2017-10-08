@@ -3,6 +3,7 @@
     flex: 1 1 0;
     flex-flow: column nowrap;
     height: 100%;
+    padding: 0 0 54px 0;
     position: relative;
 }
 
@@ -48,14 +49,62 @@
                     border-radius: 12px;
                     padding: 12px;
                 }
+                    .action-list-item-card.with-action {
+                        display: flex;
+                        flex: 1 1 auto;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding: 18px 12px;
+                    }
 
                     .action-list-item-card-title {
-                        margin: 0;
+                        margin: 0 auto 0 0;
                     }
 
                     .action-list-item-card-date {
                         color: #999999;
                         margin: 0;
+                    }
+
+                        .action-list-item-card-date .sms {
+                            color: #01aaef;
+                            margin-left: 12px;
+                        }
+
+                        .action-list-item-card-date .edit {
+                            text-align: right;
+                            margin-left: 12px;
+                        }
+
+                    .action-list-item-card-action {
+                        background-color: #ef7f01;
+                        border: none;
+                        border-radius: 6px;
+                        color: #ffffff;
+                        display: inline;
+                        flex: 0 0 auto;
+                        font-weight: bold;
+                        line-height: 24px;
+                        padding: 6px 12px;
+                        margin: 0;
+                        text-decoration: none;
+                    }
+
+                        .action-list-item-card-action:not(:last-child) {
+                            margin-right: 6px;
+                        }
+
+                        .action-list-item-card-action.blue {
+                            background-color: #01aaef;
+                        }
+
+                    .action-list-item-card-date-input {
+                        height: 32px;
+                    }
+
+                    .action-list-item-card-select {
+                        height: 32px;
                     }
 
                 .action-list-item-icon {
@@ -70,11 +119,19 @@
                     z-index: 2;
                 }
 
+                    .action-list-item-icon.blue {
+                        background-color: #01aaef;
+                    }
+
+                    .action-list-item-icon.orange {
+                        background-color: #ef7f01;
+                    }
+
 
     .request-footer {
         bottom: 0;
         left: 0;
         position: fixed;
         right: 0;
-        z-index: 1;
+        z-index: 10;
     }
