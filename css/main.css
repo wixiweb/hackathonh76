@@ -56,6 +56,10 @@ body {
     display: none !important;
 }
 
+p {
+    margin: 0 0 24px 0;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -119,17 +123,63 @@ body {
     position: relative;
 }
 
-    .main > .floating-action {
-        background-color: #ef7f01;
-        border: none;
-        border-radius: 6px;
+.alert {
+    border: none;
+    border-radius: 12px;
+    background-color: #E4E4E4;
+    display: flex;
+    /*flex: 1 1 0;*/
+    /*flex-flow: row nowrap;*/
+    padding: 12px;
+    margin: 0 0 24px 0;
+}
+
+    .alert-icon {
+        height: 64px;
+        margin-right: 12px;
+        width: 64px;
+    }
+
+    .alert-content {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+        .alert p {
+            margin: 0;
+        }
+
+        .alert-title {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .alert.success {
+            background-color: #99CC33;
+            color: #ffffff;
+        }
+
+            .alert.success p {
+                color: #ffffff;
+            }
+
+.button {
+    background-color: #ef7f01;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    display: inline;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 12px 24px;
+    margin: 0 auto 24px auto;
+    text-decoration: none;
+}
+
+    .button.floating {
         bottom: 24px;
-        color: #ffffff;
         display: block;
-        font-weight: bold;
-        line-height: 24px;
-        padding: 12px 24px;
         position: fixed;
+        margin-bottom: 0;
         right: 24px;
-        text-decoration: none;
     }
