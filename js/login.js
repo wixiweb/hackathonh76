@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
         $('#loading').show();
         var delay = 1000;
-        setTimeout(function(){ window.location = "/metuneurl"; }, delay);
+        setTimeout(function(){ window.location = "suivi.html"; }, delay);
     });
 
 });
