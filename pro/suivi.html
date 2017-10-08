@@ -8,34 +8,36 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/follow-up.css">
+    <link rel="stylesheet" href="./css/pro.css">
 </head>
 <body>
-    <header class="header">
-        <a href="./login.html">
-            <img src="../img/habitat76.png" alt="Habitat 76">
-        </a>
-    </header>
+    <div class="menu-mobile js-menu-mobile visible-xs">
+        <button class="menu-mobile-toggle js-menu-mobile-toggle">☰ MENU</button>
+        <div class="menu-mobile-logo">
+            <a href="request.html">
+                <img src="img/habitat76.png" alt="Habitat 76" width="50">
+            </a>
+        </div>
+    </div>
 
-    <main class="main">
+    <main class="main" style="margin-top: 0;">
         <header class="tab-list">
             <button type="button" class="tab-list-item active">Boîte de réception</button>
             <button type="button" class="tab-list-item">En cours</button>
         </header>
 
         <section class="follow-up-list">
-            <a href="#" class="follow-up-list-item">
+            <a href="./request.html" class="follow-up-list-item">
                 <div class="follow-up-list-item-icon new"></div>
                 <p class="follow-up-list-item-title">Problème de robinet</p>
                 <p class="follow-up-list-item-description">Déville-lès-Rouen</p>
             </a>
-            <a href="#" class="follow-up-list-item">
+            <a href="./request.html" class="follow-up-list-item">
                 <div class="follow-up-list-item-icon"></div>
                 <p class="follow-up-list-item-title">Chasse d'eaux</p>
                 <p class="follow-up-list-item-description">Canteleu</p>
             </a>
         </section>
-
-        <a href="signaler.html" class="button floating">Signaler</a>
     </main>
 
     <script src="../js/jquery-3.2.1.min.js"></script>
