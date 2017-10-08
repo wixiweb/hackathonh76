@@ -1,8 +1,18 @@
 /*$primary-color: #C50B34;*/
 /*$secondary-color: #EF7F01;*/
 
+* {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+}
+
 body {
     display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
     margin: 0;
 }
 
@@ -10,6 +20,7 @@ body {
     position: relative;
     display: flex;
     height: 80px;
+    margin-bottom: 16px;
     width: 100%;
 }
 
