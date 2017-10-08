@@ -28,11 +28,11 @@ body {
     right: 0;
     bottom: -7px;
     height: 6px;
-    background: #C50B34;
-    background: -webkit-linear-gradient(top,#c50b34,#ef7f01);
-    background: -o-linear-gradient(top,#c50b34,#ef7f01);
-    background: -moz-linear-gradient(top,#c50b34,#ef7f01);
-    background: linear-gradient(to bottom, #c50b34, #ef7f01);
+    background: #ef7f01;
+    background: -webkit-linear-gradient(right,#ef7f01,#c50b34);
+    background: -o-linear-gradient(right,#ef7f01,#c50b34);
+    background: -moz-linear-gradient(right,#ef7f01,#c50b34);
+    background: linear-gradient(to left, #ef7f01, #c50b34);
 }
 
 .menu-mobile.is-open {
@@ -175,4 +175,15 @@ body {
 .tenant-card-footer-call:focus {
     background-color: #999999;
     outline: none;
+}
+
+.gradient-title {
+    background: #ef7f01;
+    background: -webkit-linear-gradient(right,#ef7f01,#c50b34);
+    background: -o-linear-gradient(right,#ef7f01,#c50b34);
+    background: -moz-linear-gradient(right,#ef7f01,#c50b34);
+    background: linear-gradient(to left, #ef7f01, #c50b34);
+    color: #ffffff;
+    padding: 12px;
+    margin: -18px 0 0 0;
 }

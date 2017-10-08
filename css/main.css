@@ -7,7 +7,6 @@
     font-family: 'Quicksand', sans-serif;
     line-height: 24px;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
 body {
@@ -46,11 +45,11 @@ body {
         right: 0;
         bottom: -7px;
         height: 6px;
-        background: #C50B34;
-        background: -webkit-linear-gradient(top,#c50b34,#ef7f01);
-        background: -o-linear-gradient(top,#c50b34,#ef7f01);
-        background: -moz-linear-gradient(top,#c50b34,#ef7f01);
-        background: linear-gradient(to bottom, #c50b34, #ef7f01);
+        background: #ef7f01;
+        background: -webkit-linear-gradient(right,#ef7f01,#c50b34);
+        background: -o-linear-gradient(right,#ef7f01,#c50b34);
+        background: -moz-linear-gradient(right,#ef7f01,#c50b34);
+        background: linear-gradient(to left, #ef7f01, #c50b34);
     }
 
 .hidden {
