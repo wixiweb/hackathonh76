@@ -1,0 +1,42 @@
+.report {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+    .report > .title {
+        color: #C50B34;
+        line-height: 24px;
+        margin: 0 0 10px 0;
+    }
+
+    .report > .location-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .report > .location-list > li {
+            background-color: #99CCFF;
+            display: flex;
+            flex-direction: row;
+            padding: 12px;
+            margin: 12px 0;
+        }
+
+        .report > .location-list > li.cyan {
+            background-color: #00CCFF;
+        }
+
+            .report > .location-list > li > img {
+                height: 64px;
+                margin-right: 24px;
+                width: 64px;
+            }
+
+            .report > .location-list > li > p {
+                color: white;
+                font-weight: bold;
+                margin: 0;
+                padding: 12px 0;
+            }
