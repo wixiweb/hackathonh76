@@ -9,6 +9,8 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="css/utils.css" rel="stylesheet">
     <link href="css/pro.css" rel="stylesheet">
+    <link href="css/request.css" rel="stylesheet">
+    <script src="../js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="menu-mobile js-menu-mobile visible-xs">
@@ -28,13 +30,13 @@
 <main class="main">
 
     <div class="container">
-        <div class="flex">
+        <div class="request">
             <div class="tenant-card">
                 <div class="tenant-card-content">
                     <div class="tenant-card-content-name">Arnaud Lemercier</div>
                     <div class="tenant-card-content-location">
                         <img src="img/icon/marker.png" alt="">
-                        Deville-les-rouen
+                        Déville-lès-Rouen
                     </div>
                     <div class="tenant-card-content-address">
                         12 rue de la paix, APT 302
@@ -44,15 +46,38 @@
                     <div class="tenant-card-footer-phone">06.10.57.57.47</div>
                     <button class="tenant-card-footer-call">Appeler</button>
                 </div>
-
             </div>
 
-            <header class="tab-list" style="margin-top: 20px;">
-                <button type="button" class="tab-list-item active"><img src="img/icon/calendar.png" alt=""></button>
-                <button type="button" class="tab-list-item active"><img src="img/icon/align.png" alt=""></button>
-                <button type="button" class="tab-list-item active"><img src="img/icon/image.png" alt=""></button>
-                <button type="button" class="tab-list-item active"><img src="img/icon/signature.png" alt=""></button>
-            </header>
+            <section class="request-content">
+                <ul class="action-list">
+                    <li class="action-list-item">
+                        <div class="action-list-item-icon">
+                            <img src="" />
+                        </div>
+                        <div class="action-list-item-card">
+                            <p class="action-list-item-card-title">Prise en compte</p>
+                            <p class="action-list-item-card-date">08/10/2017 17:20</p>
+                        </div>
+                    </li>
+                    <li class="action-list-item">
+                        <div class="action-list-item-icon">
+                            <img src="" />
+                        </div>
+                        <div class="action-list-item-card">
+                            <p class="action-list-item-card-title">Déclaration d'incident</p>
+                            <p class="action-list-item-card-date">08/10/2017 08:30</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="request-footer">
+                <div class="tab-list">
+                    <button type="button" class="tab-list-item active"><img src="img/icon/calendar.png" alt=""></button>
+                    <button type="button" class="tab-list-item"><img src="img/icon/align.png" alt=""></button>
+                    <button type="button" class="tab-list-item"><img src="img/icon/image.png" alt=""></button>
+                </div>
+            </footer>
         </div>
     </div>
 </main>
