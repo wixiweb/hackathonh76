@@ -78,3 +78,38 @@
                 padding: 0;
                 text-align: center;
             }
+
+.contact-card {
+    border: solid 1px #E4E4E4;
+    border-radius: 12px;
+    background-color: #ffffff;
+    display: flex;
+    /*flex: 1 1 0;*/
+    /*flex-flow: row nowrap;*/
+    padding: 12px;
+    margin: 0 0 24px 0;
+}
+
+    .contact-card-picture {
+        border: solid 1px #E4E4E4;
+        border-radius: 50%;
+        height: 64px;
+        margin-right: 12px;
+        overflow: hidden;
+        width: 64px;
+    }
+
+    .contact-card-content {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+        .contact-card-title {
+            color: #ef7f01;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .contact-card-position {
+            margin: 0;
+        }
